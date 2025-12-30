@@ -42,7 +42,7 @@ from INEGIpy_v2.indicadores import Indicadores
 api = Indicadores(token="TU_TOKEN_INEGI")
 
 df = api.obtener_df(
-    indicadores="100200001",
+    indicadores="1002000001",
     nombres="Población total",
     inicio="2000",
     fin="2010"
@@ -69,7 +69,7 @@ Una columna con el nombre definido por el usuario
 Ejemplo para obtener población total, hombres y mujeres en el mismo periodo.
 ```bash
 varios = api.obtener_df(
-    indicadores=["100200001", "100200002", "100200003"],
+    indicadores=["1002000001", "1002000002", "1002000003"],
     nombres=["Población total", "Hombres", "Mujeres"],
     inicio="2000",
     fin="2010"
@@ -102,7 +102,7 @@ from INEGIpy_v2.indicadores import Indicadores
 api = Indicadores(token="TU_TOKEN_INEGI")
 
 df, metadatos = api.obtener_df(
-    indicadores="100200001",
+    indicadores="1002000001",
     nombres="Población total",
     inicio="2000",
     fin="2010",
